@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Ropita Querida</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/icono_head.ico" />
+</head>
+
+<body>
+  <header>
+    <!-- Mi Ropita Fachera -->
+    <h1>Mi Ropita Querida</h1>
+  </header>
+
+  <nav>
+    <u>
+      <!-- En vez de "index.html" puedo reemplazar por "/" -->
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="#">Reseñas</a>
+      <a href="contacto.html">Contacto</a><a href=""></a>
+    </u>
+  </nav>
+  <main>
+    <section>
+      <!-- Cada sección...main pueden tener un header y un footer que les pertenezcan exclusivamente-->
+      <h2>Sección 1</h2>
+      <p>Conociendo HTML</p>
+
+      <img src="img/perchero.jpg" alt="Perchero caricatura" />
+      <!-- El contenido de article debe tener sentido aunque se le cambie de lugar -->
+      <article>
+        <h3>Artículo 1</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Sección 2</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KB4bYpRjxrg?si=5U_5SuXjGnSSVuxi"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>
+        Un texto <br />
+        en dos líneas
+      </p>
+    </section>
+
+    <section>
+      <h2>Sección 3</h2>
+      <p>Lorem ipsum <strong>dolor</strong> sit <em>amet</em>.</p>
+    </section>
+
+    <section>
+      <h2>Reseñas</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, ab.
+        Repudiandae perferendis similique nam atque, quaerat praesentium
+        blanditiis aliquam error nihil quia magnam a, illum laudantium harum
+        expedita, quas quis.
+      </p>
+    </section>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" id="nombre" maxlength="100" placeholder="Juan">
+        </div>
+        <div>
+          <label for="apellido">Apellido: </label>
+          <input type="text" name="apellido" id="apellido" maxlength="100" placeholder="Perez">
+        </div>
+      </fieldset>
+      <fieldset>
+        <select name="opcion" id="opcion">
+          <option value="1">Opcion1</option>
+          <option value="2">Opcion2</option>
+          <option value="3">Opcion3</option>
+          <option value="4">Opcion4</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="consulta">Consulta: </label>
+        <textarea name="consulta" id="consulta" placeholder="Texto..."></textarea>
+      </fieldset>
+    </form>
+  </main>
+  <aside>
+    <!-- Acá puede ir publicidad por ejemplo -->
+  </aside>
+  <footer>
+    <small>&copy; Copyright 2024</small>
+  </footer>
+</body>
+
+</html>
