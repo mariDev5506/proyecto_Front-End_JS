@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi Ropita Querida</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="img/icono_head.ico" />
 </head>
 
 <body>
   <header>
     <!-- Mi Ropita Fachera -->
-    <h1>Mi Ropita Querida</h1>
+    <h1 class="encabezadoPrincipal">Mi Ropita Querida</h1>
   </header>
 
   <nav>
-    <u>
+    <ul>
       <!-- En vez de "index.html" puedo reemplazar por "/" -->
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="#">Reseñas</a>
-      <a href="contacto.html">Contacto</a><a href=""></a>
-    </u>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="#">Reseñas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
   </nav>
   <main>
     <section>
@@ -64,16 +64,17 @@
         expedita, quas quis.
       </p>
     </section>
-    <form action="" method="post">
+    <form action="https://formsubmit.co/mery.a.q95@gmail.com" method="post">
       <fieldset>
         <legend>Datos Personales</legend>
         <div>
           <label for="nombre">Nombre: </label>
-          <input type="text" name="nombre" id="nombre" maxlength="100" placeholder="Juan">
+          <!-- Para moverme con la tecla tab -->
+          <input tabindex="1" type="text" name="nombre" id="nombre" maxlength="100" placeholder="Juan">
         </div>
         <div>
           <label for="apellido">Apellido: </label>
-          <input type="text" name="apellido" id="apellido" maxlength="100" placeholder="Perez">
+          <input tabindex="2" type="text" name="apellido" id="apellido" maxlength="100" placeholder="Perez">
         </div>
       </fieldset>
       <fieldset>
