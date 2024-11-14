@@ -20,20 +20,20 @@
       <!-- En vez de "index.html" puedo reemplazar por "/" -->
       <li><a href="index.html">Inicio</a></li>
       <li>Productos</li>
-        <ul>
-          <a href="verano.html">
-            <li>Verano</li>
-          </a>
-          <a href="otono.html">
-            <li>Otoño</li>
-          </a>
-          <a href="invierno.html">
-            <li>Invierno</li>
-          </a>
-          <a href="primavera.html">
-            <li>Primavera</li> 
-          </a>         
-        </ul>
+      <ul>
+        <a href="verano.html">
+          <li>Verano</li>
+        </a>
+        <a href="otono.html">
+          <li>Otoño</li>
+        </a>
+        <a href="invierno.html">
+          <li>Invierno</li>
+        </a>
+        <a href="primavera.html">
+          <li>Primavera</li>
+        </a>
+      </ul>
       <li><a href="index.html#contacto">Contacto</a></li>
       <li><a href="quienessomos.html">Quiénes Somos</a></li>
       <li><a href="index.html#resenas">Reseñas</a></li>
@@ -41,32 +41,39 @@
   </nav>
   <main>
     <section>
-      <div>
-        <!-- Cada sección...main pueden tener un header y un footer que les pertenezcan exclusivamente-->
-        <a href="verano.html">
-          <h2>Verano</h2>
-        </a>
-        <a href="verano.html"><img src="img/conjunto_verano.jpg" alt=""></a>
+      <div class="seccion_portada">
+        
+        <article class="portada-principal">
+          <a href="verano.html" class="link-portada">
+            <h2 class="titulo_portada">Verano</h2>
+            <img class="img_portada" src="img/verano/portada/conjunto_verano.jpg" alt="conjunto_verano">
+          </a>
+        </article>
         <!-- El contenido de article debe tener sentido aunque se le cambie de lugar -->
-      </div>      
-      <div>
-        <a href="otono.html">
-          <h2>Otoño</h2>
-        </a>
-        <!-- <p>Lorem ipsum <strong>dolor</strong> sit <em>amet</em>.</p> -->
-        <a href="productos.html"><img src="img/otono_amarillo.avif" alt=""></a>
       </div>
-      <div>
-        <a href="invierno.html">
-          <h2>Invierno</h2>
-        </a>
-        <a href="invierno.html"><img src="img/campera_feriaCircular.jpg" alt=""></a>
+      <div class="portada-principal">
+        <article class="portada-principal">
+          <a href="otono.html" class="link-portada">
+            <h2 class="titulo_portada">Otoño</h2>
+            <img class="img_portada" src="img/otono/portada/otono_amarillo.avif" alt="conjunto_otono">
+          </a>
+        </article>
       </div>
-      <div>
-        <a href="primavera.html">
-          <h2>Primavera</h2>
-        </a>
-        <a href="o"><img src="img/primavera.webp" alt=""></a>
+      <div class="portada-principal">
+        <article class="portada-principal">
+          <a href="invierno.html" class="link-portada">
+            <h2 class="titulo_portada">Invierno</h2>
+            <img class="img_portada" src="img/invierno/portada/campera_feriaCircular.jpg" alt="conjunto_invierno">
+          </a>
+        </article>
+      </div>
+      <div class="portada-principal">
+        <article class="portada-principal">
+          <a href="primavera.html" class="link-portada">
+            <h2 class="titulo_portada">Primavera</h2>
+            <img class="img_portada" src="img/primavera/portada/primavera.webp" alt="conjunto_primavera">
+          </a>
+        </article>
       </div>
     </section>
     <section>
@@ -123,7 +130,47 @@
     <!-- Acá puede ir publicidad por ejemplo -->
   </aside>
   <footer>
-    <small>&copy; Copyright Mariela Quipildor 2024</small>
+    <div class="contenedor_footer">
+
+      <div class="secciones_footer">
+        <div class="seccion_footer">
+          <h4>Enlaces Rapidos</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="quienessomos.html">Quienes Somos</a></li>
+            <li><a href="index.html#resenas">Reseñas</a></li>
+          </ul>
+        </div>
+        <div class="seccion_footer">
+          <h4>Redes Sociales</h4>
+          <ul>
+            <li><a href="">Facebook <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                  stroke-width="2">
+                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                </svg> </a></li>
+            <li><a href="">X <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
+                  stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                  <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                  </path>
+                </svg></a></li>
+            <li><a href="">Instagram <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                  stroke-width="2">
+                  <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                  <path d="M16.5 7.5l0 .01"></path>
+                </svg> </a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p>&copy; 2024 Mi Ropita Querdia. Todos los derechos reservados</p>
+      </div>
+    </div>
   </footer>
 </body>
 

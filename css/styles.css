@@ -1,24 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400;700&display=swap");
+
 * {
   margin: 0;
-}
-h1 {
-  font-size: 5rem;
 }
 .encabezadoPrincipal {
   background-color: #fdd86e;
   color: #429398;
 }
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+}
 a {
   text-decoration: none;
 }
-nav ul {
-  list-style-type: none;
+span {
+  font-family: "Libre Baskerville", serif;
+  font-size: 4rem;
+  font-weight: 700;
 }
-footer {
-  background-color: #cad5ad;
-  color: #54343f;
-  font-size: 1.5rem;
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 5rem;
+  text-align: center;
+}
+h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #000000;
+}
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
 }
 body {
   background-color: #f6a570;
+}
+footer {
+  background-color: #fa4032;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px 0 0;
+  padding: 10px 0;
+}
+
+footer h4 {
+  font-size: 1.3rem;
+  color: #fef3e2;
+}
+footer p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+/* footer a {
+  line-height: 1.6;
+} */
+footer a,
+footer p {
+  color: #fef3e2;
+  font-size: 1rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin: 8px 0;
+}
+footer .contenedor_footer {
+  max-width: 120%;
+  margin: 0 auto;
+}
+footer .secciones_footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+footer .seccion_footer {
+  margin: 15px;
+  min-width: 200px;
+}
+ul {
+  list-style-type: none;
+}
+.seccion-portada {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.portada-principal {
+  text-align: center;
+  max-width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.portada-principal:hover {
+  transform: scale(1.05); /* Efecto de zoom cuando pasa el puntero */
+}
+
+.link-portada {
+  color: #000000;
+}
+
+.titulo_portada {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.img_portada {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px auto;
 }
