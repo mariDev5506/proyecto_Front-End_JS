@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Invierno</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/colecciones.css" />
   <link rel="icon" href="img/icono_head.ico" />
 </head>
 
@@ -14,12 +14,11 @@
     <!-- Mi Ropita Fachera -->
     <span class="encabezadoPrincipal">Mi Ropita Querida</span>
   </header>
-
-  <nav>
-    <ul>
+  <nav class="navegacion-principal contenedor">
+    <ul class="menu">
       <!-- En vez de "index.html" puedo reemplazar por "/" -->
       <li><a href="index.html">Inicio</a></li>
-      <li>Productos</li>
+      <li><a href="#">Productos</a></li>
       <ul>
         <a href="verano.html">
           <li>Verano</li>
@@ -41,21 +40,95 @@
   </nav>
   <main>
     <h1>Invierno</h1>
-    <section>
-      <img src="img/invierno/buzo_cuelloZipper_hilfiger.jpeg" alt="buzo camel con cuello zipper y estapado hilfiger">
-      <img src="img/invierno/campera_tricolorRBA.jpeg" alt="campera roja, blanca y azul">
-      <img src="img/invierno/sweter_tejido_blancoYnegro.jpeg" alt="sweter blanco y negro">
-      <img src="img/invierno/camperaUva_levis.jpeg" alt="campera inflable color uva">
-      <img src="img/invierno/parka_verdeLima.jpeg" alt="campera verde lima">
-      <img src="img/invierno/sweter_gris_rayasBlancas.jpeg" alt="sweter gris claro con rayas blancas">
-      <img src="img/invierno/chaquetaNegra_similCuero_relieveCuadrille.jpeg"
-        alt="chaqueta simil cuero negro con relieve cuadriculado">
-      <img src="img/invierno/sweter_celesteYrayas.jpeg" alt="sweter celeste con rayas blancas">
+    <section class="seccion-portada">
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Buzo Zipper Hilfiger</h2>
+              <img class="img_portada" src="img/invierno/buzo_cuelloZipper_hilfiger.jpeg"
+                alt="buzo camel con cuello zipper y estapado hilfiger">
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Campera Tricolor</h2>
+              <img class="img_portada" src="img/invierno/campera_tricolorRBA.jpeg" alt="campera roja, blanca y azul">
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Sweter Tejido</h2>
+              <img class="img_portada" src="img/invierno/sweter_tejido_blancoYnegro.jpeg" alt="sweter blanco y negro">
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Campera Levis</h2>
+              <img class="img_portada" src="img/invierno/camperaUva_levis.jpeg" alt="campera inflable color uva">
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Parka Verde Lima</h2>
+              <img class="img_portada" src="img/invierno/parka_verdeLima.jpeg" alt="campera verde lima">
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Sweter Gris con Rayas</h2>
+              <img class="img_portada" src="img/invierno/sweter_gris_rayasBlancas.jpeg"
+                alt="sweter gris claro con rayas blancas">
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Campera de Cuero</h2>
+              <img class="img_portada" src="img/invierno/chaquetaNegra_similCuero_relieveCuadrille.jpeg"
+                alt="chaqueta simil cuero negro con relieve cuadriculado">
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="container-portada-principal">
+        <article class="portada-principal">
+          <a href="#" class="link-portada">
+            <div>
+              <h2 class="titulo_portada">Sweter Celeste con Rayas</h2>
+              <img class="img_portada" src="img/invierno/sweter_celesteYrayas.jpeg"
+                alt="sweter celeste con rayas blancas">
+            </div>
+          </a>
+        </article>
+      </div>
     </section>
   </main>
   <footer>
     <div class="contenedor_footer">
-
       <div class="secciones_footer">
         <div class="seccion_footer">
           <h4>Enlaces Rapidos</h4>
@@ -92,7 +165,7 @@
         </div>
       </div>
       <div>
-        <p>&copy; 2024 Mi Ropita Querdia. Todos los derechos reservados</p>
+        <p class="footer-copyright">&copy; 2024 Mi Ropita Querdia. Todos los derechos reservados</p>
       </div>
     </div>
   </footer>
