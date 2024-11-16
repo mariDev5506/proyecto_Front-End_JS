@@ -5,36 +5,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto</title>
+  <link rel="stylesheet" href="css/contacto.css">
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <h1>Contacto</h1>
-  </header>
-  <div class="contacto">
-    <!-- <img src="img/Contact.png" alt="Dos personas hablando" /> -->
-  </div>
-  <!-- action PARA PODER ENVIAR FORMULARIOS A NUESTROS MAILS (prueba) -->
+  </header>  action PARA PODER ENVIAR FORMULARIOS A NUESTROS MAILS -->
   <form action="https://formsubmit.co/mery.a.q95@gmail.com" method="post">
-    <!-- <div> Para agrupar las "agrupaciones" de elementos uno arriba del otro y que no quede todo pegado -->
-    <div>
+    <h2>Contacto</h2>
+
+    <div class="input-grupo">
+
       <label for="nombre">Nombre: </label>
-      <input type="text" name="nombre" id="nombre" required>
+      <!-- Para moverme con la tecla tab -->
+      <input tabindex="1" type="text" class="form_input" name="nombre" id="nombre" maxlength="100"
+        placeholder="Escribe tu nombre" required>
+
+      <!-- <label for="apellido">Apellido: </label>
+      <input tabindex="2" type="text" class="form_input" name="apellido" id="apellido" maxlength="100"
+        placeholder="Escribe tu apellido"> -->
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" name="telefono" id="telefono" placeholder="Ingresa un teléfono">
+
+      <label for="email">Correo</label>
+      <input type="email" name="email" id="email" placeholder="Ingresa tu e-mail" required>
+
+      <label for="consulta">Mensaje:</label>
+      <textarea name="consulta" id="consulta" cols="50" rows="8" placeholder="Describe aquí tu consulta..."
+        required></textarea>
+
+      <input type="submit" class="btn" value="Enviar">
     </div>
-    <div>
-      <label for="email">Correo: </label>
-      <input type="email" name="email" id="email">
-    </div>
-    <div>
-      <label for="consulta">Consulta: </label>
-      <textarea name="consulta" id="consulta"></textarea>
-    </div>
-    <div>
-      <label for="condiciones">Condiciones</label>
-      <input type="checkbox" name="condiciones" id="condiciones" value="acepto" required>
-    </div>
-    <button type="submit">Enviar</button>
   </form>
+
 </body>
 
 </html>
