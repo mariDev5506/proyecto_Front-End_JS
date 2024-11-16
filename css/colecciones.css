@@ -6,19 +6,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-.encabezadoPrincipal {
+/* .encabezadoPrincipal {
   background-color: #fdd86e;
   font-size: 5rem;
   font-weight: 700;
   color: #429398;
+} */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #fdd86e;
+  width: 100%;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #429398;
+  padding: .6rem 0;
 }
-
-span, h1, h2, h3 {
+span,
+h1,
+h2,
+h3 {
   font-family: "Libre Baskerville", serif;
+  text-align: center;
 }
 a {
   text-decoration: none;
@@ -35,6 +50,9 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+p {
+  padding: 1rem 1rem;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(
@@ -42,14 +60,15 @@ body {
     #f6a570 0%,
     #aa5486 100%
   ); /* Degradado de naranja a fucsia */
-  width: 100vw;
+  width: 100%;
   min-height: 100vh; /* Para que que el fondo cubra toda la altura de la pantalla */
 }
+
 footer {
   background-color: #fa4032;
   font-family: Arial, Helvetica, sans-serif;
   margin: 50px 0 0;
-  padding: 10px 0;
+  padding: .6rem 0;
 }
 
 footer h4 {
@@ -106,28 +125,24 @@ ul {
   max-width: 120rem;
   margin: 0 auto;
 } */
-
-/* .nav-bg {
-  background-color: #aa5486;
-} */
-
 .navegacion-principal {
   width: 100%;
-  display: flex; /*Habilita flexbox*/
+  display: flex;
   background-color: #aa5486;
+  margin: 0 auto;
+  border-radius: 8px;
 }
+
 .navegacion-principal > ul {
-  width: 100%;
   flex-grow: 1;
-  display: flex; /*Habilita flexbox*/
+  display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .navegacion-principal > ul {
     flex-direction: row;
-    justify-content: space-between;
-    /* background-color: lightblue; */
+    justify-content: center;
   }
 }
 .navegacion-principal a {
@@ -135,13 +150,15 @@ ul {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700; /*700 es lo mismo que bold, 400 sería el normal*/
+  font-size: 1.5rem;
+  font-weight: 400; /*700 es lo mismo que bold, 400 sería el normal*/
   padding: 1rem; /*Para "engordar" el elemento enlace (a)*/
 }
 .navegacion-principal a:hover {
   background-color: #fdd86e;
   color: #000000;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
 }
 
 .seccion-portada {
@@ -149,10 +166,10 @@ ul {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px;
-  width: 100%;
-  /* max-width: 100%; */
-  margin: 0 auto;
+  padding: 20px 0;
+  width: auto;
+  max-width: 100%;
+  /* margin: 0 auto; */
 }
 
 .portada-principal {
@@ -178,12 +195,9 @@ ul {
   font-size: 1.5em;
   color: #333;
   padding: 0.325rem 0;
-  /* tengo que grabar nuestras reuniones */
 }
-/*re piola, lo soñe*/
 .img_portada {
   max-width: 100%;
-  /* height: 400px; */
   height: 25rem;
   border-radius: 8px;
   object-fit: cover;
